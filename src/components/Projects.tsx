@@ -28,9 +28,9 @@ const Projects: React.FC = () => {
     {
       title: 'Wishesaz',
       description: 'A Kurdish version of Wordle, bringing the popular word game to Kurdish speakers worldwide.',
-      image: 'https://images.pexels.com/photos/957224/pexels-photo-957224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'img/wishesaz.gif',
       tags: ['Web Development', 'Game Design', 'Language'],
-      link: 'https://wishesaz.com',
+      link: 'https://mkanabi.github.io/wishasaz/play.html',
       details: 'Wishesaz is a Kurdish adaptation of the popular word game Wordle, designed to make language learning engaging and accessible. The project involved creating a database of Kurdish words, implementing game mechanics, and designing an intuitive interface that respects Kurdish linguistic features. The game has helped thousands of Kurdish speakers worldwide connect with their language in a new way.'
     },
     {
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
       description: 'An online typing and literary challenge platform specifically designed for Kurdish literature.',
       image: 'https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       tags: ['Web App', 'Education', 'Literature'],
-      link: 'https://kheranus.org',
+      link: 'https://mkanabi.github.io/Kheranus/play.html',
       details: 'Kheranus is an innovative platform that combines typing practice with literary education. The platform presents users with excerpts from classic and contemporary Kurdish literature, helping them improve their typing skills while simultaneously exposing them to important cultural texts. The project includes features such as typing speed tracking, accuracy measurements, and a comprehensive library of Kurdish literary works.'
     },
     {
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
       tl.fromTo(
         headingRef.current,
         { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6 }
+        { y: 0, opacity: 1, duration: 0.6 } 
       )
       .fromTo(
         projectsRef.current?.querySelectorAll('.project-card'),
@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
   };
   
   const closeProjectDetails = () => {
-    gsap.to(modalRef.current, {
+    gsap.to(modalRef.current, { 
       opacity: 0,
       scale: 0.9,
       duration: 0.3,
