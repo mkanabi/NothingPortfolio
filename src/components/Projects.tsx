@@ -26,6 +26,13 @@ const Projects: React.FC = () => {
   
   const projects: Project[] = [
     {
+      title: 'Miscarded',
+      description: 'A group social game',
+      image: 'img/miscarded.png',
+      tags: ['Grroup Game', 'Social', 'Automation'],
+      link: 'https://miscarded.vercel.app/',
+      details: 'Miscarded is a social game that can be played by 3 players or more, the platform acts as virtual card dealer for the words in an imposter hunt journey'
+    }, {
       title: 'Wishesaz',
       description: 'A Kurdish version of Wordle, bringing the popular word game to Kurdish speakers worldwide.',
       image: 'img/wishesaz.gif',
@@ -36,19 +43,12 @@ const Projects: React.FC = () => {
     {
       title: 'Kheranus',
       description: 'An online typing and literary challenge platform specifically designed for Kurdish literature.',
-      image: 'https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: 'img/kheranus.png',
       tags: ['Web App', 'Education', 'Literature'],
       link: 'https://mkanabi.github.io/Kheranus/play.html',
       details: 'Kheranus is an innovative platform that combines typing practice with literary education. The platform presents users with excerpts from classic and contemporary Kurdish literature, helping them improve their typing skills while simultaneously exposing them to important cultural texts. The project includes features such as typing speed tracking, accuracy measurements, and a comprehensive library of Kurdish literary works.'
-    },
-    {
-      title: 'Kurdish Wordlist Repository',
-      description: 'An open-source dictionary and language resource for Kurdish dialects and vocabularies.',
-      image: 'https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['Open Source', 'Language', 'Research'],
-      link: 'https://github.com/mkurdhist/wordlist',
-      details: 'The Kurdish Wordlist Repository is a comprehensive digital resource that documents vocabulary across various Kurdish dialects. This project addresses the critical need for accessible Kurdish language resources in the digital age. The repository includes word definitions, usage examples, etymological information, and dialect variations. It serves as an essential tool for language researchers, educators, translators, and Kurdish language learners worldwide.'
     }
+
   ];
   
   useEffect(() => {

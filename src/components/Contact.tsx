@@ -139,6 +139,7 @@ const Contact: React.FC = () => {
           <a 
             href="mailto:mkanabi@protonmail.com" 
             className="mt-8 inline-block btn contact-item"
+            style={{ zIndex: 10, pointerEvents: 'auto' }}
           >
             Send me a message
           </a>
