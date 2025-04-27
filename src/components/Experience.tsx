@@ -21,35 +21,37 @@ const Experience: React.FC = () => {
   
   const experiences: ExperienceItem[] = [
     {
-      company: 'LC Waikiki',
+      company: 'ZIllion Max',
       position: 'Creative Specialist',
-      period: '2022 - Present',
+      period: 'Aug 2024 - Present',
       description: 'Led creative strategy and content development for marketing campaigns, resulting in increased brand engagement and customer acquisition.'
     },
-    {
-      company: 'Sharp Vision',
-      position: 'Technical Consultant',
-      period: '2020 - 2022',
-      description: 'Provided technical expertise for creative projects, bridging the gap between design objectives and technical implementation.'
-    },
+
     {
       company: 'Kurdistan Arts & Culture NGO',
-      position: 'Creative Director',
-      period: '2019 - 2020',
+      position: 'Technical and Creative Officer',
+      period: 'July 2023 - Dec 2023',
       description: 'Directed creative initiatives to preserve and promote Kurdish culture through innovative digital experiences and storytelling.'
     },
     {
       company: 'Helsinki Foundation for Human Rights',
-      position: 'Digital Content Strategist',
-      period: '2017 - 2019',
+      position: 'Creative Project Assitant',
+      period: 'April 2024- July 2024',
       description: 'Developed compelling digital narratives to raise awareness about human rights issues and engage diverse audiences.'
     },
+       {
+      company: 'LC Waikiki',
+      position: 'Creative Specialist',
+      period: 'Sep 2021 - 2023',
+      description: 'Led creative strategy and content development for marketing campaigns, resulting in increased brand engagement and customer acquisition.'
+    },
+    
     {
-      company: 'Freelance',
-      position: 'Creative Technologist',
-      period: '2015 - 2017',
-      description: 'Collaborated with various clients to create unique digital experiences that combined technical expertise with creative storytelling.'
-    }
+      company: 'Sharp Vision',
+      position: 'Technical/Creative officer',
+      period: '2020 - 2022',
+      description: 'Provided technical expertise for creative projects, bridging the gap between design objectives and technical implementation.'
+    },
   ];
   
   useEffect(() => {

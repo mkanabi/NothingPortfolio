@@ -29,7 +29,7 @@ const Awards: React.FC = () => {
     {
       title: 'Best Script Award',
       organization: 'NUHAT Duhok Film Festival',
-      year: '2022',
+      year: '2024',
       description: 'Honored for outstanding screenplay that showcased innovative storytelling and cultural significance.'
     },
     {

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import gsap from 'gsap';
-import { Mail, Phone, Github, Linkedin } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin,Instagram } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [copied, setCopied] = useState<string | null>(null);
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
             
             <div className="contact-item flex items-center gap-4 mt-6">
               <a 
-                href="https://github.com/mohammedkanabi" 
+                href="https://github.com/mkanabi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 rounded-full transition-colors hover:bg-primary hover:text-white"
@@ -111,6 +111,15 @@ const Contact: React.FC = () => {
               >
                 <Linkedin className="w-6 h-6" />
               </a>
+              <a 
+                href="https://www.instagram.com/kanabi.me/#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-100 rounded-full transition-colors hover:bg-primary hover:text-white"
+                aria-label="Instagram Profile"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
             </div>
           </div>
         </div>
@@ -123,7 +132,7 @@ const Contact: React.FC = () => {
           </p>
           
           <p className="contact-item">
-            Whether you're a company looking to innovate, a fellow creative seeking collaboration, or simply want to say hello, 
+            Whether you're a planning to hire me or simply want to say hello, 
             I'd love to hear from you. Let's create something remarkable together.
           </p>
           

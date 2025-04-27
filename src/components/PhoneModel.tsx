@@ -5,16 +5,17 @@ import { Group } from 'three';
 
 const PhoneModel: React.FC = () => {
   const groupRef = useRef<Group>(null);
-  const { nodes, materials } = useGLTF('/nothing-phone.glb');
+  const { nodes, materials } = useGLTF('nothing-phone.glb');
 
   useFrame((state) => {
     if (!groupRef.current) return;
     
     // Floating animation
-    groupRef.current.position.y = Math.sin(state.clock.elapsedTime) * 0.1;
+    groupRef.current.position.y = Math.sin(state.clock.elapsedTime) * 0.01 -1;
     
     // Subtle rotation
-    groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+    groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.3) * 0.1;
+    
   });
 
   return (

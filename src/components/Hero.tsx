@@ -51,17 +51,11 @@ const Hero: React.FC = () => {
       }
     });
 
-    // 3D Model animation on scroll
-    gsap.to(modelRef.current, {
-      y: '100px',
-      rotateZ: 360,
-      scrollTrigger: {
-        trigger: heroRef.current,
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true
-      }
-    });
+// 3D Model smooth scroll animation
+gsap.to(modelRef.current, {
+
+});
+
   }, []);
 
   return (
@@ -103,23 +97,48 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        <div ref={modelRef} className="h-[600px] w-full">
-          <Canvas
-            camera={{ position: [0, 0, 5], fov: 75 }}
-            className="w-full h-full"
-          >
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} />
-            <Suspense fallback={null}>
-              <PhoneModel />
-            </Suspense>
-            <OrbitControls 
-              enableZoom={false}
-              autoRotate
-              autoRotateSpeed={4}
-            />
-          </Canvas>
-        </div>
+   <div ref={modelRef} className="h-[1000px] w-full">
+  <Canvas
+    camera={{ position: [0, 0, 20], fov: 20 }}
+    className="w-full h-full"
+  >
+
+    {/* Soft ambient light */}
+    <ambientLight intensity={0.3} />
+
+    {/* Key light */}
+    <directionalLight
+      position={[5, 5, 5]}
+      intensity={6.2}
+      castShadow
+    />
+
+    {/* Fill light */}
+    <directionalLight
+      position={[-5, 2, 5]}
+      intensity={0.7}
+    />
+
+
+
+    {/* Back light / Rim light */}
+    <directionalLight
+      position={[0, 5, -5]}
+      intensity={0.5}
+    />
+
+    <Suspense fallback={null}>
+      <PhoneModel />
+    </Suspense>
+
+    <OrbitControls 
+      enableZoom={false}
+      autoRotate
+      autoRotateSpeed={4}
+    />
+  </Canvas>
+</div>
+
       </div>
       
       {/* Grid overlay for aesthetic */}

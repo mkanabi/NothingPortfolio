@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'LED Dot-Matrix';
+  src: url('./fonts/LED Dot-Matrix 400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --black: #000000;
   --white: #FFFFFF;
@@ -19,13 +26,19 @@ html {
 }
 
 body {
-  @apply font-sans text-primary bg-secondary;
   overflow-x: hidden;
+    font-family: "NType82Mono" !important;
+
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-sans font-semibold;
+h1, h2, h3,h4{
+  font-family: 'LED Dot-Matrix', sans-serif;
   letter-spacing: -0.02em;
+  font-weight: 600;
+  font-style: normal;
+    -webkit-font-smoothing: antialiased;  /* For Webkit-based browsers */
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 .section {
@@ -33,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-10 relative inline-block;
+  @apply text-2xl md:text-3xl lg:text-4xl  mb-10 relative inline-block;
 }
 
 .section-title:after {
